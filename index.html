@@ -16,10 +16,14 @@
 <header>
   <div class="wrap header-inner">
     <a href="#top" class="brand"><img src="assets/logo.png" alt="Carza"> CARZA</a>
-    <nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+    <nav id="siteNav">
       <ul>
         <li class="has-dropdown">
-          <a href="#productos">Productos</a>
+          <div class="dropdown-row">
+            <a href="#productos">Productos</a>
+            <button class="dropdown-toggle" aria-label="Mostrar productos" aria-expanded="false">▾</button>
+          </div>
           <ul class="dropdown">
             <li><a href="techos-moviles.html">Techos móviles</a></li>
             <li><a href="techos-fijos.html">Techos fijos</a></li>
@@ -53,7 +57,7 @@
         </div>
       </div>
       <div class="hero-visual">
-        <video src="assets/video-techo.mp4" autoplay muted loop playsinline></video>
+        <svg class="roof-illustration" viewBox="0 0 480 340" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0" stop-color="#E6E1D9"/>
@@ -96,7 +100,7 @@
       </div>
       <div class="product-grid">
         <a class="product-card reveal" href="techos-moviles.html">
-          <div class="product-card-media"><img src="assets/img-techo2.jpeg" alt="Techos móviles" loading="lazy"></div>
+          <div class="product-card-media"><img src="assets/img-techo.jpeg" alt="Techos móviles" loading="lazy"></div>
           <div class="product-card-body">
             <span class="num">01</span>
             <h3>Techos móviles</h3>
@@ -104,7 +108,7 @@
           </div>
         </a>
         <a class="product-card reveal" href="techos-fijos.html">
-          <div class="product-card-media"><img src="assets/img-techo3.jpeg" alt="Techos fijos" loading="lazy"></div>
+          <div class="product-card-media"><img src="assets/img-techo2.jpeg" alt="Techos fijos" loading="lazy"></div>
           <div class="product-card-body">
             <span class="num">02</span>
             <h3>Techos fijos</h3>
@@ -112,7 +116,7 @@
           </div>
         </a>
         <a class="product-card reveal" href="techos-opacos.html">
-          <div class="product-card-media"><img src="assets/img-techo4.jpeg" alt="Techos opacos" loading="lazy"></div>
+          <div class="product-card-media"><img src="assets/img-techo3.jpeg" alt="Techos opacos" loading="lazy"></div>
           <div class="product-card-body">
             <span class="num">03</span>
             <h3>Techos opacos</h3>
@@ -120,7 +124,7 @@
           </div>
         </a>
         <a class="product-card reveal" href="pergolas.html">
-          <div class="product-card-media"><img src="assets/img-techo5.jpeg" alt="Pérgolas" loading="lazy"></div>
+          <div class="product-card-media"><img src="assets/img-techo4.jpeg" alt="Pérgolas" loading="lazy"></div>
           <div class="product-card-body">
             <span class="num">04</span>
             <h3>Pérgolas</h3>
@@ -128,7 +132,7 @@
           </div>
         </a>
         <a class="product-card reveal" href="barandas-de-vidrio.html">
-          <div class="product-card-media"><img src="assets/img-techo6.jpeg" alt="Barandas de vidrio" loading="lazy"></div>
+          <div class="product-card-media"><img src="assets/img-techo5.jpeg" alt="Barandas de vidrio" loading="lazy"></div>
           <div class="product-card-body">
             <span class="num">05</span>
             <h3>Barandas de vidrio</h3>
@@ -136,7 +140,7 @@
           </div>
         </a>
         <a class="product-card reveal" href="cerramientos-de-aluminio.html">
-          <div class="product-card-media"><img src="assets/img-techo.jpeg" alt="Cerramientos de aluminio" loading="lazy"></div>
+          <div class="product-card-media"><img src="assets/img-techo6.jpeg" alt="Cerramientos de aluminio" loading="lazy"></div>
           <div class="product-card-body">
             <span class="num">06</span>
             <h3>Cerramientos de aluminio</h3>
@@ -144,7 +148,7 @@
           </div>
         </a>
         <a class="product-card reveal" href="piel-de-vidrios.html">
-          <div class="product-card-media"><img src="https://picsum.photos/seed/carza-piel2/500/380" alt="Piel de vidrios" loading="lazy"></div>
+          <div class="product-card-media"><img src="assets/img-techo.jpeg" alt="Piel de vidrios" loading="lazy"></div>
           <div class="product-card-body">
             <span class="num">07</span>
             <h3>Piel de vidrios</h3>
@@ -213,24 +217,24 @@
       </div>
       <div class="gallery-grid">
         <div class="gallery-item reveal">
-          <img src="assets/img-techo.jpeg" alt="Patio cubierto con techo de vidrio, imagen de referencia" loading="lazy">
-          <div class="cap">Patio cubierto</div>
+          <video src="assets/video-techo2.mp4" autoplay muted loop playsinline></video>
+          <div class="cap">Techo en movimiento</div>
         </div>
         <div class="gallery-item reveal">
-          <img src="assets/img-techo2.jpeg" alt="Pérgola exterior, imagen de referencia" loading="lazy">
-          <div class="cap">Pérgola</div>
+          <img src="assets/img-techo2.jpeg" alt="Techo de vidrio, imagen de referencia" loading="lazy">
+          <div class="cap">Galería cubierta</div>
         </div>
         <div class="gallery-item reveal">
           <img src="assets/img-techo3.jpeg" alt="Cerramiento de vidrio, imagen de referencia" loading="lazy">
           <div class="cap">Cerramiento de vidrio</div>
         </div>
         <div class="gallery-item reveal">
-          <img src="assets/img-techo4.jpeg" alt="Quincho techado, imagen de referencia" loading="lazy">
-          <div class="cap">Quincho</div>
+          <video src="assets/video-techo.mp4" autoplay muted loop playsinline></video>
+          <div class="cap">Detalle de instalación</div>
         </div>
         <div class="gallery-item reveal">
-          <img src="assets/img-techo5.jpeg" alt="Balcón con baranda de vidrio, imagen de referencia" loading="lazy">
-          <div class="cap">Balcón</div>
+          <img src="assets/img-techo5.jpeg" alt="Patio con techo móvil, imagen de referencia" loading="lazy">
+          <div class="cap">Patio cubierto</div>
         </div>
       </div>
     </section>

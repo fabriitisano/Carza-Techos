@@ -16,10 +16,14 @@
 <header>
   <div class="wrap header-inner">
     <a href="index.html" class="brand"><img src="assets/logo.png" alt="Carza"> CARZA</a>
-    <nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+    <nav id="siteNav">
       <ul>
         <li class="has-dropdown">
-          <a href="index.html#productos">Productos</a>
+          <div class="dropdown-row">
+            <a href="index.html#productos">Productos</a>
+            <button class="dropdown-toggle" aria-label="Mostrar productos" aria-expanded="false">▾</button>
+          </div>
           <ul class="dropdown">
             <li><a href="techos-moviles.html">Techos móviles</a></li>
             <li><a href="techos-fijos.html">Techos fijos</a></li>
@@ -48,7 +52,7 @@
 
     <div class="product-detail reveal">
       <div class="product-detail-media">
-        <img src="https://picsum.photos/seed/carza-barandas2/900/720" alt="Barandas de vidrio, imagen de referencia" loading="lazy">
+        <img src="assets/img-techo5.jpeg" alt="Barandas de vidrio, imagen de referencia" loading="lazy">
       </div>
       <div class="product-detail-body">
         <p>Sistemas de vidrio templado de seguridad para balcones, escaleras y separación de ambientes, sin perder la vista.</p>
