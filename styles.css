@@ -370,3 +370,25 @@ footer{padding:48px 0 32px; border-top:1px solid var(--line); margin-top:40px;}
   transition:transform .7s cubic-bezier(.2,.7,.3,1);
 }
 .gallery-item:hover video{transform:scale(1.09);}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #25D366;
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 16px 32px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #20ba5a;
+  transform: translateY(-2px);
+
+}
