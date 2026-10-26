@@ -40,6 +40,16 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Al tocar un link del menú móvil, se cierra el menú
+  if (menuToggle && nav) {
+    nav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        nav.classList.remove('nav-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
   document.querySelectorAll('.has-dropdown').forEach(item => {
     const toggle = item.querySelector('.dropdown-toggle');
     if (!toggle) return;
